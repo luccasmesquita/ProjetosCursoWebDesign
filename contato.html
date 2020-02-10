@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+	<head>
+		<title>Projeto</title>
+		<meta charset="utf-8">
+		<meta name="description" content="Descrição do site aqui...">
+		<meta name="author" content="Luccas Mesquita">
+		<meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0">
+		<!-- Colocar aqui meta tags SEO -->
+		<meta name="keywords" content="palavras-chaves,">
+		<link rel="stylesheet" href="css/font-awesome.min.css">
+		<link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,700&display=swap" rel="stylesheet">
+		<link rel="stylesheet" type="text/css" href="css/style.css">
+	</head>
+	<body> 
+		<!-- inicio menu -->
+		<header> 
+			<div class="container"> 
+				<div class="logo"><a href="index.html"><h2>Hotel Ilha <i class="fa fa-briefcase"></i></h2></a></div>
+				<nav class="menu-desktop">
+					<ul>
+						<li><a href="index.html">Home</a></li>
+						<li><a href="sobre.html">Sobre</a></li>
+						<li class="selected"><a href="contato.html">Contato</a></li>
+					</ul>
+				</nav>
+				<nav class="menu-mobile">
+					<h2><i class="fa fa-bars"></i></h2>
+					<ul>
+						<li ><a href="index.html">Home</a></li>
+						<li><a href="sobre.html">Sobre</a></li>
+						<li class="selected"><a href="contato.html">Contato</a></li>
+					</ul>
+				</nav>
+				<div class="clear"></div>
+			</div>
+		</header> 
+		<!-- fim menu -->
+
+		<!-- inicio bg -->
+		<section style="background-image: url('images/hotel.jpg');" class="title-page">
+			<div class="overlay__title-page"></div>
+			<div class="container">
+				<h2>Contato</h2>
+				<p>
+					Lorem Ipsum é simplesmente texto fictício da indústria tipográfica e de impressão.
+			    </p>
+		    </div>
+		</section>
+		<!-- fim bg -->
+
+ 				<!-- inicio contato -->
+		<section class="contato">
+			<div class="container">
+				<div class="w60 formulario">
+					<h2>Entre em contato que estaremos respondendo o mais breve possivel!</h2>
+					
+					<!-- inicio formulario -->
+					<form method="post">
+						<div class="w50">
+							<input placeholder="Nome" type="text" name="" required />
+						</div>
+						<div class="w50">
+							<input placeholder="Sobrenome" type="text" name="" required />
+						</div>
+						<div class="w100">
+							<input placeholder="E-mail" type="email" name="" required />
+						</div>
+						<div class="w100">
+							<textarea placeholder="Sua mensagem..."></textarea>
+						</div>
+						<div class="w100">
+							<input type="submit" value="Enviar">
+						</div>
+					</form>
+					<!-- fim fomulario -->
+				</div>
+				<div class="w40 tags-form">
+					<h2><i class="fa fa-comment"></i> Fale com a nossa equipe!</h2>
+					<p>Lorem Ipsum é simplesmente texto fictício da indústria tipográfica e de impressão.</p>
+
+					<p class="tag-contato"><i class="fa fa-facebook"> </i> /hotelilha</p>
+					<p class="tag-contato"><i class="fa fa-instagram"> </i> @hotelilha</p>
+					<p class="tag-contato"><i class="fa fa-phone"> </i> (22)9999-9999</p>
+				</div>
+				<div class="clear"></div>
+			</div>
+		</section>
+		<!-- fim contato -->
+
+		<!-- inicio rodape -->
+		<footer class="footer1">
+			<div class="container">
+				<div class="w33">
+					<h2>Aonde Estamos?</h2>
+					<p><i class="fa fa-map-pin" aria-hidden="true"></i> R. Fulano da Silva, Bairro, RJ</p>
+					<p><i class="fa fa-phone" aria-hidden="true"></i> (22)9999-9999</p>
+
+				</div>
+				<div class="w33">
+					<h2>Links Úteis</h2>
+					<a href="">Hotel Ilha</a> 
+					<a href="">Decolar.com</a>
+
+				</div>
+				<div class="w33">
+					<h2>Conecte-se Conosco</h2>
+					<div class="group-icons">
+						<a href=""><i class="fa fa-facebook"></i></a>
+						<a href=""><i class="fa fa-instagram"></i></a>
+					</div>
+				</div>
+				
+			</div>
+			<div class="clear"></div>
+		</footer>
+
+		<footer class="footer2">
+			<div class="container">
+				<p>Todos os direitos reservados</p>
+				
+			</div>
+		</footer>
+		<!-- fim rodape -->
+
+		<script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+		<script>
+			$('nav.menu-mobile h2').click(function(){
+				$('nav.menu-mobile ul').slideToggle();
+			});
+		</script>
+	</body>
+</html>
